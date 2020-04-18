@@ -10,7 +10,7 @@ describe('Header', () => {
     wrapper = shallow(<Header />)
   })
 
-  it ('should render component correctly', () => {
+  it('should render component correctly', () => {
     expect(wrapper.find(`[data-test='header']`).length).toBe(1)
   })
 
