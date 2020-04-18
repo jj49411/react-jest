@@ -6,14 +6,16 @@ import Header from './Header'
 describe('Header', () => {
   let wrapper
 
-  it ('should render component correctly', () => {
+  beforeEach(() => {
     wrapper = shallow(<Header />)
-    expect(wrapper.find('.header').length).toBe(1)
+  })
+
+  it ('should render component correctly', () => {
+    expect(wrapper.find(`[data-test='header']`).length).toBe(1)
   })
 
   it('should render a title', () => {
-    wrapper = shallow(<Header />)
-    expect(wrapper.find('.title').length).toBe(1)
+    expect(wrapper.find(`[data-test='title']`).length).toBe(1)
   })
 
 })

@@ -2,8 +2,8 @@ import React from 'react'
 
 const Header = (props) => {
   return(
-    <header className='header'>
-      <h1 className='title'>
+    <header data-test='header'>
+      <h1 data-test='title'>
         Meow
       </h1>
     </header>
