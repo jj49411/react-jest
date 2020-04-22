@@ -18,5 +18,14 @@ describe('Button', () => {
     expect(wrapper.find(`[data-test='button']`).length).toBe(1)
   })
 
+  it('should render counter display', () => {
+    expect(wrapper.find(`[data-test='counter']`).length).toBe(1)
+  })
+
+  it('should display 0 as default', () => {
+    expect(wrapper.state('counter')).toBe(0)
+  })
+
+
 
 })
