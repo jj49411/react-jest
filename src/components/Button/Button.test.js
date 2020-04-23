@@ -26,6 +26,9 @@ describe('Button', () => {
     expect(wrapper.state('counter')).toBe(0)
   })
 
-
+  it('should increment counter display when clicked on button', () => {
+    wrapper.find(`[data-test='button']`).simulate('click')
+    expect(wrapper.find(`[data-test='counter']`).text()).toContain(1)
+  })
 
 })

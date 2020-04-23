@@ -13,7 +13,7 @@ class Button extends Component {
   render() {
     return(
       <div data-test='button-component'>
-        <button data-test='button'>+</button>
+        <button data-test='button' onClick={() => this.setState({ counter: this.state.counter + 1 })}>+</button>
         <p data-test='counter'>The count is {this.state.counter}</p>
       </div>
     )
